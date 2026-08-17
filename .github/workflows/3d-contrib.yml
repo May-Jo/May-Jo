@@ -20,11 +20,11 @@ jobs:
 
       - name: Generate 3D contribution graph
         uses: yoshi389111/github-profile-3d-contrib@0.3.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: May-Jo
-          YEAR: 2026
-          OUTPUT_DIR: ./output
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          username: May-Jo
+          year: 2026
+          output_dir: ./output
 
       - name: Commit and push
         uses: stefanzweifel/git-auto-commit-action@v5
