@@ -95,14 +95,6 @@ I'm **Mayank**, a Computer Science Engineering student specializing in **Artific
 
 ---
 
-## 📈 3D Contribution Graph
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/May-Jo/May-Jo/output/3d-contrib.svg" alt="3D Contribution Graph" width="100%" />
-</p>
-
----
-
 ## 🎬 Developer Vibes
 
 <p align="center">
