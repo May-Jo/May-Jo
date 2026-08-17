@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="246" viewBox="0 0 900 246" role="img" aria-label="Currently">
+  <rect width="100%" height="100%" fill="#0d1117" rx="16"/>
+  <rect x="18" y="18" width="864" height="210" rx="12" fill="#010409" stroke="#21262d"/>
+  <circle cx="42" cy="40" r="6" fill="#f85149"/><circle cx="62" cy="40" r="6" fill="#d29922"/><circle cx="82" cy="40" r="6" fill="#3fb950"/>
+  <text x="40" y="62" class="prompt">$ cat currently.yml</text>
+  <style>
+    .prompt { font-family: 'JetBrains Mono', monospace; font-size: 14px; fill: #7d8590; }
+    .key    { font-family: 'JetBrains Mono', monospace; font-size: 17px; fill: #3fb950; font-weight: 700; }
+    .val    { font-family: 'JetBrains Mono', monospace; font-size: 17px; fill: #e6edf3; }
+  </style>
+  <g opacity="0"><animate attributeName="opacity" begin="0.15s" dur="0.15s" from="0" to="1" fill="freeze"/><text x="40" y="82" class="key">Building</text><text x="200" y="82" class="val">AI Agents, Real-Time Backends &amp; TinyML Edge IoT</text></g><g opacity="0"><animate attributeName="opacity" begin="0.27s" dur="0.15s" from="0" to="1" fill="freeze"/><text x="40" y="118" class="key">Learning</text><text x="200" y="118" class="val">High-Performance Systems &amp; Deep Learning Optimization</text></g><g opacity="0"><animate attributeName="opacity" begin="0.39s" dur="0.15s" from="0" to="1" fill="freeze"/><text x="40" y="154" class="key">Reading</text><text x="200" y="154" class="val">Designing Data-Intensive Applications</text></g><g opacity="0"><animate attributeName="opacity" begin="0.51s" dur="0.15s" from="0" to="1" fill="freeze"/><text x="40" y="190" class="key">Open To</text><text x="200" y="190" class="val">AI/ML, Backend &amp; Software Engineering Roles</text></g>
+</svg>

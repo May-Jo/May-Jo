@@ -2,40 +2,31 @@ name: Generate Snake Animation
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    # 02:25 UTC = 07:55 IST — runs every morning after contribution refresh
+    - cron: "25 2 * * *"
   workflow_dispatch:
-  push:
-    branches: [main]
 
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
     permissions:
       contents: write
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Generate snake animation
-        uses: Platane/snk@v3
+      - name: Generate Snake SVG
+        uses: Platane/snk/svg-only@v3
         with:
           github_user_name: May-Jo
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+          outputs: assets/snake/snake.svg
 
-      - name: Create output directory
-        run: mkdir -p output
-
-      - name: Copy generated SVG
-        run: cp dist/github-contribution-grid-snake.svg output/github-contribution-grid-snake.svg
-
-      - name: Commit and push
+      - name: Commit if changed
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "🐍 Update snake animation"
-          branch: main
-          file_pattern: output/github-contribution-grid-snake.svg
-          commit_options: '--no-verify'
+          commit_message: "chore(snake): refresh snake animation"
+          commit_user_name: "MayJo"
+          commit_user_email: "studyzzz25@gmail.com"
+          commit_author: "MayJo <studyzzz25@gmail.com>"
+          file_pattern: assets/snake/snake.svg

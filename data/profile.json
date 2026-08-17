@@ -1,0 +1,187 @@
+{
+  "name": "Mayank",
+  "title": "AI & Software Engineer",
+  "tagline": "AI/ML · Backend Systems · Hackathon Enthusiast",
+  "summary": "Computer Science Engineering student specializing in Artificial Intelligence & Machine Learning. Passionate about building practical AI systems, high-performance backends, graph algorithms, and edge IoT devices.",
+  "education": [
+    {
+      "institution": "Computer Science & Engineering (AIML)",
+      "degree": "B.Tech in Computer Science & Engineering (AI & ML)",
+      "duration": "2023 – 2027",
+      "cgpa": "CSE | AIML"
+    }
+  ],
+  "location": "India",
+  "contact": "studyzzz25@gmail.com",
+  "linkedin": "https://linkedin.com/in/mayank",
+  "github": "https://github.com/May-Jo",
+  "hero_interests": [
+    "AI & Machine Learning",
+    "Backend & Distributed Systems",
+    "IoT & TinyML Edge Computing",
+    "Hackathons & Rapid Prototyping"
+  ],
+  "experience": [
+    {
+      "company": "Dynamic Patrol Route Optimizer",
+      "url": "https://github.com/May-Jo/Dynamic-Patrol-Route-Optimizer",
+      "role": "Lead Systems & Algorithm Developer",
+      "duration": "2025 – Present",
+      "highlights": [
+        "Engineered real-time adaptive patrol route optimization using graph algorithms & spatial indexing",
+        "Implemented Dijkstra's algorithm with selective route re-optimization for dynamic event response",
+        "Optimized memory footprint and path computation latency in high-density node clusters"
+      ],
+      "technologies": ["C", "Graph Algorithms", "Dijkstra", "Spatial Indexing"]
+    },
+    {
+      "company": "IoT & Edge AI Systems",
+      "url": "https://github.com/May-Jo/Parking_Iot",
+      "role": "TinyML & Embedded Developer",
+      "duration": "2025 – Present",
+      "highlights": [
+        "Designed smart parking infrastructure integrating low-power IoT sensors with TinyML edge inference",
+        "Developed real-time telemetry processing pipelines for automated occupancy detection",
+        "Built responsive web dashboards for monitoring live sensor telemetry and analytics"
+      ],
+      "technologies": ["JavaScript", "TinyML", "IoT", "HTML5/CSS3"]
+    },
+    {
+      "company": "Awesome Hackathon",
+      "url": "https://github.com/May-Jo/awesome-hackathon",
+      "role": "Open Source Maintainer & Creator",
+      "duration": "2025 – Present",
+      "highlights": [
+        "Curated comprehensive ecosystem of tools, APIs, platforms, and playbooks for hackathon builders",
+        "Created interactive search & filtering web application for rapid tool discovery"
+      ],
+      "technologies": ["Open Source", "JavaScript", "Web Development"]
+    }
+  ],
+  "tech_stack": {
+    "Programming Languages": [
+      {"name": "C", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"},
+      {"name": "C++", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"},
+      {"name": "Java", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"},
+      {"name": "Python", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"},
+      {"name": "JavaScript", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"},
+      {"name": "TypeScript", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"}
+    ],
+    "AI / ML & Data": [
+      {"name": "PyTorch", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"},
+      {"name": "TensorFlow", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"},
+      {"name": "OpenCV", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg"},
+      {"name": "NumPy", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"},
+      {"name": "Pandas", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"},
+      {"name": "Jupyter", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg"}
+    ],
+    "Backend": [
+      {"name": "FastAPI", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"},
+      {"name": "Flask", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"},
+      {"name": "Node.js", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"},
+      {"name": "Spring", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"},
+      {"name": "PostgreSQL", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"},
+      {"name": "MongoDB", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"}
+    ],
+    "Frontend": [
+      {"name": "React", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"},
+      {"name": "Next.js", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"},
+      {"name": "HTML5", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"},
+      {"name": "CSS3", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"},
+      {"name": "Tailwind", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"}
+    ],
+    "DevOps & Tools": [
+      {"name": "Docker", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"},
+      {"name": "Git", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"},
+      {"name": "GitHub", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"},
+      {"name": "VS Code", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"},
+      {"name": "Linux", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"},
+      {"name": "Postman", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"}
+    ]
+  },
+  "projects": [
+    {
+      "title": "Dynamic Patrol Route Optimizer",
+      "description": "Dynamic, event-aware, and real-time adaptive patrol route optimization system using graph algorithms, Dijkstra's algorithm, spatial indexing, and selective route re-optimization for security and resource routing.",
+      "metrics": [
+        "Real-time event-driven path re-optimization",
+        "Optimized Dijkstra with spatial node indexing",
+        "Sub-second recalculation in high-density graphs"
+      ],
+      "stack": ["C", "Graph Theory", "Dijkstra", "Spatial Indexing"],
+      "github": "https://github.com/May-Jo/Dynamic-Patrol-Route-Optimizer",
+      "demo": ""
+    },
+    {
+      "title": "Parking IoT / TinyML",
+      "description": "Smart parking system combining IoT hardware sensors with on-device TinyML machine learning models for real-time edge inference, automated occupancy detection, and live telemetry dashboards.",
+      "metrics": [
+        "Edge inference with TinyML sensor integration",
+        "Real-time slot availability tracking & telemetry",
+        "Low-power embedded architecture & web UI"
+      ],
+      "stack": ["JavaScript", "HTML5", "TinyML", "IoT", "Edge Computing"],
+      "github": "https://github.com/May-Jo/Parking_Iot",
+      "demo": ""
+    },
+    {
+      "title": "Awesome Hackathon",
+      "description": "Open-source curated directory and interactive web application collecting top platforms, tools, APIs, guides, and playbooks for hackathon organizers and competitive developers.",
+      "metrics": [
+        "50+ curated hackathon tools & platforms",
+        "Interactive instant search and filtering engine",
+        "Community-driven open source repository"
+      ],
+      "stack": ["JavaScript", "CSS3", "HTML5", "Open Source"],
+      "github": "https://github.com/May-Jo/awesome-hackathon",
+      "demo": ""
+    },
+    {
+      "title": "LLM Engineering & Agents",
+      "description": "Production-grade repository for LLM engineering featuring retrieval-augmented generation (RAG), vector embeddings, custom prompt pipelines, and autonomous agent orchestration.",
+      "metrics": [
+        "RAG with vector embeddings & semantic search",
+        "Custom prompt-chain & agent workflows",
+        "Transformer model integration & fine-tuning"
+      ],
+      "stack": ["Python", "Jupyter", "Transformers", "RAG", "LangChain"],
+      "github": "https://github.com/May-Jo/llm_engineering",
+      "demo": ""
+    }
+  ],
+  "achievements": [
+    {
+      "name": "Hackathon Builder & Innovator",
+      "subtitle": "Passionate Builder · Rapid Prototyping",
+      "icon": "https://api.iconify.design/simple-icons:github.svg"
+    },
+    {
+      "name": "Open Source Contributor",
+      "subtitle": "Awesome Hackathon & Open Repositories",
+      "icon": "https://api.iconify.design/simple-icons:opensourceinitiative.svg"
+    }
+  ],
+  "coding": {
+    "LeetCode": {
+      "url": "https://leetcode.com/u/May-Jo/",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/leetcode/leetcode-original.svg",
+      "extra": "Algorithms & Problem Solving"
+    },
+    "GitHub": {
+      "url": "https://github.com/May-Jo",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+      "extra": "14+ Public Repositories & Tools"
+    },
+    "CodeChef": {
+      "url": "https://www.codechef.com",
+      "icon": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/codechef.svg",
+      "extra": "Competitive Programming"
+    }
+  },
+  "currently": {
+    "Building": "AI Agents, Real-Time Backends & TinyML Edge IoT",
+    "Learning": "High-Performance Systems & Deep Learning Optimization",
+    "Reading": "Designing Data-Intensive Applications",
+    "Open To": "AI/ML, Backend & Software Engineering Roles"
+  }
+}
