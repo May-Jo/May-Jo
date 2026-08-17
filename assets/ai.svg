@@ -1,0 +1,121 @@
+<svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="aiBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#11101d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="aiAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00f5ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#00f5ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f5ff;stop-opacity:0" />
+    </radialGradient>
+    <filter id="neuralGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="300" height="200" fill="url(#aiBg)" rx="12"/>
+  <rect x="10" y="10" width="280" height="180" fill="none" stroke="url(#aiAccent)" stroke-width="1" rx="8" opacity="0.2"/>
+  
+  <!-- Neural network visualization -->
+  <g filter="url(#neuralGlow)">
+    <!-- Layer 1: Input nodes -->
+    <g fill="url(#aiAccent)">
+      <circle cx="60" cy="50" r="8">
+        <animate attributeName="r" values="8;10;8" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="60" cy="100" r="8">
+        <animate attributeName="r" values="8;10;8" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0.5;1" dur="2.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="60" cy="150" r="8">
+        <animate attributeName="r" values="8;10;8" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0.5;1" dur="2.4s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    
+    <!-- Layer 2: Hidden nodes -->
+    <g fill="url(#aiAccent)">
+      <circle cx="150" cy="35" r="10">
+        <animate attributeName="r" values="10;12;10" dur="1.8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="150" cy="100" r="12">
+        <animate attributeName="r" values="12;14;12" dur="1.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0.6;1" dur="1.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="150" cy="165" r="10">
+        <animate attributeName="r" values="10;12;10" dur="1.8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    
+    <!-- Layer 3: Output nodes -->
+    <g fill="url(#aiAccent)">
+      <circle cx="240" cy="70" r="8">
+        <animate attributeName="r" values="8;10;8" dur="2.2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0.5;1" dur="2.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="240" cy="130" r="8">
+        <animate attributeName="r" values="8;10;8" dur="2.2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0.5;1" dur="2.4s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    
+    <!-- Connections -->
+    <g stroke="url(#aiAccent)" stroke-width="1.5" opacity="0.3">
+      <!-- Input to hidden -->
+      <line x1="68" y1="50" x2="142" y2="35">
+        <animate attributeName="stroke-dashoffset" values="0;50" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite"/>
+      </line>
+      <line x1="68" y1="100" x2="142" y2="100">
+        <animate attributeName="stroke-dashoffset" values="0;50" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2.2s" repeatCount="indefinite"/>
+      </line>
+      <line x1="68" y1="150" x2="142" y2="165">
+        <animate attributeName="stroke-dashoffset" values="0;50" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2.4s" repeatCount="indefinite"/>
+      </line>
+      <!-- Hidden to output -->
+      <line x1="158" y1="35" x2="232" y2="70">
+        <animate attributeName="stroke-dashoffset" values="0;50" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2.1s" repeatCount="indefinite"/>
+      </line>
+      <line x1="158" y1="100" x2="232" y2="70">
+        <animate attributeName="stroke-dashoffset" values="0;50" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2.3s" repeatCount="indefinite"/>
+      </line>
+      <line x1="158" y1="100" x2="232" y2="130">
+        <animate attributeName="stroke-dashoffset" values="0;50" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2.5s" repeatCount="indefinite"/>
+      </line>
+      <line x1="158" y1="165" x2="232" y2="130">
+        <animate attributeName="stroke-dashoffset" values="0;50" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2.7s" repeatCount="indefinite"/>
+      </line>
+    </g>
+  </g>
+  
+  <!-- Labels -->
+  <g font-family="JetBrains Mono, Fira Code, Consolas, monospace" font-size="11" fill="url(#aiAccent)" opacity="0.7">
+    <text x="15" y="55" text-anchor="middle">Input</text>
+    <text x="150" y="20" text-anchor="middle">Hidden</text>
+    <text x="285" y="55" text-anchor="middle">Output</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="150" y="190" text-anchor="middle" font-family="JetBrains Mono, Fira Code, Consolas, monospace" font-size="12" fill="url(#aiAccent)" opacity="0.6">
+    Neural Network Forward Pass
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+  </text>
+</svg>
