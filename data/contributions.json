@@ -1,11 +1,11 @@
 {
   "username": "May-Jo",
-  "generated_at": "2026-08-30T08:18:01.804308+00:00",
+  "generated_at": "2026-08-31T08:38:25.808745+00:00",
   "fetch_succeeded": true,
   "error": null,
-  "total": 56,
-  "current_streak": 13,
-  "longest_streak": 13,
+  "total": 58,
+  "current_streak": 14,
+  "longest_streak": 14,
   "max_count": 6,
   "days": [
     {
@@ -1830,6 +1830,11 @@
     },
     {
       "date": "2026-08-30",
+      "count": 2,
+      "level": 2
+    },
+    {
+      "date": "2026-08-31",
       "count": 0,
       "level": 0
     }
