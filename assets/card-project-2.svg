@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="290" viewBox="0 0 900 290" role="img" aria-label="Parking IoT / TinyML project card">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="268" viewBox="0 0 900 268" role="img" aria-label="AI Email Assistant &amp; Automation System project card">
   <rect width="100%" height="100%" fill="#0d1117" rx="12"/>
   <g class="card-group">
-    <rect x="18" y="10" width="864" height="270" rx="10" class="card-bg"/>
+    <rect x="18" y="10" width="864" height="248" rx="10" class="card-bg"/>
     <g transform="translate(18, 10)">
-      <text x="32" y="34" class="title">Parking IoT / TinyML</text><text x="832" y="34" class="arrow" text-anchor="end">View Repository ↗</text><line x1="32" y1="50" x2="832" y2="50" stroke="#21262d" stroke-width="1"/><text x="32" y="74" class="desc">Smart parking system combining IoT hardware sensors with on-device TinyML machine learning</text><text x="32" y="96" class="desc">models for real-time edge inference, automated occupancy detection, and live telemetry</text><text x="32" y="118" class="desc">dashboards.</text><text x="32" y="152" class="section-hdr">Key Metrics:</text><text x="46" y="174" class="metric">▸ Edge inference with TinyML sensor integration</text><text x="46" y="194" class="metric">▸ Real-time slot availability tracking &amp; telemetry</text><text x="46" y="214" class="metric">▸ Low-power embedded architecture &amp; web UI</text><text x="32" y="246" class="stack">Tech Stack: JavaScript · HTML5 · TinyML · IoT · Edge Computing</text>
+      <text x="32" y="34" class="title">AI Email Assistant &amp; Automation System</text><text x="832" y="34" class="arrow" text-anchor="end">View Repository ↗</text><line x1="32" y1="50" x2="832" y2="50" stroke="#21262d" stroke-width="1"/><text x="32" y="74" class="desc">Full-stack intelligent email automation platform using TypeScript &amp; Node.js with LLM context</text><text x="32" y="96" class="desc">parsing, smart response generation, asynchronous queue management, and OAuth authentication.</text><text x="32" y="130" class="section-hdr">Key Metrics:</text><text x="46" y="152" class="metric">▸ LLM-powered email context parsing &amp; response generator</text><text x="46" y="172" class="metric">▸ Asynchronous task queues &amp; RESTful API backend</text><text x="46" y="192" class="metric">▸ Reactive TypeScript frontend &amp; OAuth2 authentication</text><text x="32" y="224" class="stack">Tech Stack: TypeScript · Node.js · AI/LLM · REST APIs · OAuth</text>
     </g>
   </g>
   <style>

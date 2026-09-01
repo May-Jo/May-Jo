@@ -23,39 +23,52 @@
   ],
   "experience": [
     {
-      "company": "Dynamic Patrol Route Optimizer",
-      "url": "https://github.com/May-Jo/Dynamic-Patrol-Route-Optimizer",
-      "role": "Lead Systems & Algorithm Developer",
+      "company": "LLM Engineering System",
+      "url": "https://github.com/May-Jo/llm_engineering",
+      "role": "AI & Autonomous Agent Engineer",
       "duration": "2025 – Present",
       "highlights": [
-        "Engineered real-time adaptive patrol route optimization using graph algorithms & spatial indexing",
-        "Implemented Dijkstra's algorithm with selective route re-optimization for dynamic event response",
-        "Optimized memory footprint and path computation latency in high-density node clusters"
+        "Engineered production RAG pipelines, vector embedding indexes & semantic search architectures",
+        "Developed custom prompt chains, fine-tuning workflows, and autonomous multi-agent systems",
+        "Optimized sub-second context retrieval and model evaluation benchmarks for LLM apps"
       ],
-      "technologies": ["C", "Graph Algorithms", "Dijkstra", "Spatial Indexing"]
+      "technologies": ["Python", "RAG", "Vector Search", "Transformers", "LangChain"]
     },
     {
-      "company": "IoT & Edge AI Systems",
+      "company": "AI Email Assistant System",
+      "url": "https://github.com/May-Jo/Email-assistant",
+      "role": "Full-Stack AI Developer",
+      "duration": "2025 – Present",
+      "highlights": [
+        "Built intelligent full-stack email automation engine with LLM context parsing & response generation",
+        "Designed asynchronous task processing, REST APIs & OAuth2 authentication integrations",
+        "Created reactive web client with real-time notification streams & automated message workflows"
+      ],
+      "technologies": ["TypeScript", "Node.js", "AI Automation", "REST APIs", "OAuth"]
+    },
+    {
+      "company": "Algorithmic Solutions Suite",
+      "url": "https://github.com/May-Jo/LeetCode",
+      "role": "Core Algorithm Specialist",
+      "duration": "2024 – Present",
+      "highlights": [
+        "Implemented high-performance Data Structures & Algorithms solutions in Java & C++",
+        "Optimized memory footprint & time complexity for graph algorithms, DP, and tree operations",
+        "Maintained structured test suites for continuous algorithmic benchmarking"
+      ],
+      "technologies": ["Java", "C++", "DSA", "Dynamic Programming", "Graph Theory"]
+    },
+    {
+      "company": "IoT & TinyML Telemetry",
       "url": "https://github.com/May-Jo/Parking_Iot",
-      "role": "TinyML & Embedded Developer",
+      "role": "Embedded Systems Developer",
       "duration": "2025 – Present",
       "highlights": [
-        "Designed smart parking infrastructure integrating low-power IoT sensors with TinyML edge inference",
-        "Developed real-time telemetry processing pipelines for automated occupancy detection",
-        "Built responsive web dashboards for monitoring live sensor telemetry and analytics"
+        "Designed low-power IoT sensor telemetry processing pipelines with on-device TinyML edge inference",
+        "Developed real-time occupancy detection algorithms & automated telemetry streaming",
+        "Built responsive web dashboard for monitoring live sensor analytics"
       ],
-      "technologies": ["JavaScript", "TinyML", "IoT", "HTML5/CSS3"]
-    },
-    {
-      "company": "Awesome Hackathon",
-      "url": "https://github.com/May-Jo/awesome-hackathon",
-      "role": "Open Source Maintainer & Creator",
-      "duration": "2025 – Present",
-      "highlights": [
-        "Curated comprehensive ecosystem of tools, APIs, platforms, and playbooks for hackathon builders",
-        "Created interactive search & filtering web application for rapid tool discovery"
-      ],
-      "technologies": ["Open Source", "JavaScript", "Web Development"]
+      "technologies": ["JavaScript", "TinyML", "IoT Sensors", "Embedded Systems"]
     }
   ],
   "tech_stack": {
@@ -101,51 +114,51 @@
   },
   "projects": [
     {
-      "title": "Dynamic Patrol Route Optimizer",
-      "description": "Dynamic, event-aware, and real-time adaptive patrol route optimization system using graph algorithms, Dijkstra's algorithm, spatial indexing, and selective route re-optimization for security and resource routing.",
+      "title": "LLM Engineering & Autonomous Agents",
+      "description": "Production-grade repository featuring retrieval-augmented generation (RAG), vector embeddings, custom prompt pipelines, autonomous multi-agent orchestration, and sub-second context retrieval.",
       "metrics": [
-        "Real-time event-driven path re-optimization",
-        "Optimized Dijkstra with spatial node indexing",
-        "Sub-second recalculation in high-density graphs"
+        "Production RAG with vector embeddings & semantic search",
+        "Custom prompt-chaining & agent orchestration workflows",
+        "Transformer model integration & fine-tuning pipelines"
       ],
-      "stack": ["C", "Graph Theory", "Dijkstra", "Spatial Indexing"],
-      "github": "https://github.com/May-Jo/Dynamic-Patrol-Route-Optimizer",
+      "stack": ["Python", "Jupyter", "Transformers", "RAG", "LangChain"],
+      "github": "https://github.com/May-Jo/llm_engineering",
       "demo": ""
     },
     {
-      "title": "Parking IoT / TinyML",
-      "description": "Smart parking system combining IoT hardware sensors with on-device TinyML machine learning models for real-time edge inference, automated occupancy detection, and live telemetry dashboards.",
+      "title": "AI Email Assistant & Automation System",
+      "description": "Full-stack intelligent email automation platform using TypeScript & Node.js with LLM context parsing, smart response generation, asynchronous queue management, and OAuth authentication.",
       "metrics": [
-        "Edge inference with TinyML sensor integration",
-        "Real-time slot availability tracking & telemetry",
+        "LLM-powered email context parsing & response generator",
+        "Asynchronous task queues & RESTful API backend",
+        "Reactive TypeScript frontend & OAuth2 authentication"
+      ],
+      "stack": ["TypeScript", "Node.js", "AI/LLM", "REST APIs", "OAuth"],
+      "github": "https://github.com/May-Jo/Email-assistant",
+      "demo": ""
+    },
+    {
+      "title": "Algorithmic Solutions & Data Structures",
+      "description": "High-performance Data Structures & Algorithms suite tracking problem-solving solutions in Java & C++. Focused on optimal time/space complexity, dynamic programming, graph algorithms, and system performance.",
+      "metrics": [
+        "Comprehensive Data Structures & Algorithms repository",
+        "Optimized graph traversal, DP & tree algorithms",
+        "Continuous algorithmic benchmarking in Java & C++"
+      ],
+      "stack": ["Java", "C++", "DSA", "Dynamic Programming", "Graph Theory"],
+      "github": "https://github.com/May-Jo/LeetCode",
+      "demo": ""
+    },
+    {
+      "title": "Smart IoT & TinyML Telemetry System",
+      "description": "Edge computing & IoT infrastructure combining hardware telemetry sensors with on-device TinyML machine learning models for real-time edge inference, automated occupancy detection, and dashboards.",
+      "metrics": [
+        "Edge inference with TinyML sensor telemetry integration",
+        "Real-time occupancy tracking & automated data streams",
         "Low-power embedded architecture & web UI"
       ],
       "stack": ["JavaScript", "HTML5", "TinyML", "IoT", "Edge Computing"],
       "github": "https://github.com/May-Jo/Parking_Iot",
-      "demo": ""
-    },
-    {
-      "title": "Awesome Hackathon",
-      "description": "Open-source curated directory and interactive web application collecting top platforms, tools, APIs, guides, and playbooks for hackathon organizers and competitive developers.",
-      "metrics": [
-        "50+ curated hackathon tools & platforms",
-        "Interactive instant search and filtering engine",
-        "Community-driven open source repository"
-      ],
-      "stack": ["JavaScript", "CSS3", "HTML5", "Open Source"],
-      "github": "https://github.com/May-Jo/awesome-hackathon",
-      "demo": ""
-    },
-    {
-      "title": "LLM Engineering & Agents",
-      "description": "Production-grade repository for LLM engineering featuring retrieval-augmented generation (RAG), vector embeddings, custom prompt pipelines, and autonomous agent orchestration.",
-      "metrics": [
-        "RAG with vector embeddings & semantic search",
-        "Custom prompt-chain & agent workflows",
-        "Transformer model integration & fine-tuning"
-      ],
-      "stack": ["Python", "Jupyter", "Transformers", "RAG", "LangChain"],
-      "github": "https://github.com/May-Jo/llm_engineering",
       "demo": ""
     }
   ],

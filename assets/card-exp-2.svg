@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220" role="img" aria-label="IoT &amp; Edge AI Systems experience card">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="240" viewBox="0 0 900 240" role="img" aria-label="AI Email Assistant System experience card">
   <rect width="100%" height="100%" fill="#0d1117" rx="12"/>
   <g class="card-group">
-    <rect x="18" y="10" width="864" height="200" rx="10" class="card-bg"/>
+    <rect x="18" y="10" width="864" height="220" rx="10" class="card-bg"/>
     <g transform="translate(18, 10)">
-      <circle cx="44" cy="32" r="6" fill="#3fb950" stroke="#010409" stroke-width="2"/><text x="66" y="37" class="role-title">TinyML &amp; Embedded Developer @ IoT &amp; Edge AI Systems</text><text x="712" y="37" class="duration" text-anchor="end">2025 – Present</text><text x="832" y="37" class="arrow" text-anchor="end">View ↗</text><text x="66" y="58" class="bullet">• Designed smart parking infrastructure integrating low-power IoT sensors with</text><text x="66" y="78" class="bullet">  TinyML edge inference</text><text x="66" y="102" class="bullet">• Developed real-time telemetry processing pipelines for automated occupancy</text><text x="66" y="122" class="bullet">  detection</text><text x="66" y="146" class="bullet">• Built responsive web dashboards for monitoring live sensor telemetry and analytics</text><text x="66" y="176" class="tech-tag">JavaScript  ·  TinyML  ·  IoT  ·  HTML5/CSS3</text>
+      <circle cx="44" cy="32" r="6" fill="#3fb950" stroke="#010409" stroke-width="2"/><text x="66" y="37" class="role-title">Full-Stack AI Developer @ AI Email Assistant System</text><text x="712" y="37" class="duration" text-anchor="end">2025 – Present</text><text x="832" y="37" class="arrow" text-anchor="end">View ↗</text><text x="66" y="58" class="bullet">• Built intelligent full-stack email automation engine with LLM context parsing &amp;</text><text x="66" y="78" class="bullet">  response generation</text><text x="66" y="102" class="bullet">• Designed asynchronous task processing, REST APIs &amp; OAuth2 authentication</text><text x="66" y="122" class="bullet">  integrations</text><text x="66" y="146" class="bullet">• Created reactive web client with real-time notification streams &amp; automated</text><text x="66" y="166" class="bullet">  message workflows</text><text x="66" y="196" class="tech-tag">TypeScript  ·  Node.js  ·  AI Automation  ·  REST APIs  ·  OAuth</text>
     </g>
   </g>
   <style>

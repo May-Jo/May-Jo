@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="176" viewBox="0 0 900 176" role="img" aria-label="Awesome Hackathon experience card">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="200" viewBox="0 0 900 200" role="img" aria-label="Algorithmic Solutions Suite experience card">
   <rect width="100%" height="100%" fill="#0d1117" rx="12"/>
   <g class="card-group">
-    <rect x="18" y="10" width="864" height="156" rx="10" class="card-bg"/>
+    <rect x="18" y="10" width="864" height="180" rx="10" class="card-bg"/>
     <g transform="translate(18, 10)">
-      <circle cx="44" cy="32" r="6" fill="#3fb950" stroke="#010409" stroke-width="2"/><text x="66" y="37" class="role-title">Open Source Maintainer &amp; Creator @ Awesome Hackathon</text><text x="712" y="37" class="duration" text-anchor="end">2025 – Present</text><text x="832" y="37" class="arrow" text-anchor="end">View ↗</text><text x="66" y="58" class="bullet">• Curated comprehensive ecosystem of tools, APIs, platforms, and playbooks for</text><text x="66" y="78" class="bullet">  hackathon builders</text><text x="66" y="102" class="bullet">• Created interactive search &amp; filtering web application for rapid tool discovery</text><text x="66" y="132" class="tech-tag">Open Source  ·  JavaScript  ·  Web Development</text>
+      <circle cx="44" cy="32" r="6" fill="#3fb950" stroke="#010409" stroke-width="2"/><text x="66" y="37" class="role-title">Core Algorithm Specialist @ Algorithmic Solutions Suite</text><text x="712" y="37" class="duration" text-anchor="end">2024 – Present</text><text x="832" y="37" class="arrow" text-anchor="end">View ↗</text><text x="66" y="58" class="bullet">• Implemented high-performance Data Structures &amp; Algorithms solutions in Java &amp; C++</text><text x="66" y="82" class="bullet">• Optimized memory footprint &amp; time complexity for graph algorithms, DP, and tree</text><text x="66" y="102" class="bullet">  operations</text><text x="66" y="126" class="bullet">• Maintained structured test suites for continuous algorithmic benchmarking</text><text x="66" y="156" class="tech-tag">Java  ·  C++  ·  DSA  ·  Dynamic Programming  ·  Graph Theory</text>
     </g>
   </g>
   <style>

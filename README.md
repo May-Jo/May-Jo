@@ -31,18 +31,23 @@
   <img src="./assets/experience-header.svg" width="100%" alt="Experience timeline header" />
 </p>
 <p align="center">
-  <a href="https://github.com/May-Jo/Dynamic-Patrol-Route-Optimizer" target="_blank">
-    <img src="./assets/card-exp-1.svg" width="100%" alt="Dynamic Patrol Route Optimizer" />
+  <a href="https://github.com/May-Jo/llm_engineering" target="_blank">
+    <img src="./assets/card-exp-1.svg" width="100%" alt="LLM Engineering System" />
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/May-Jo/Email-assistant" target="_blank">
+    <img src="./assets/card-exp-2.svg" width="100%" alt="AI Email Assistant System" />
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/May-Jo/LeetCode" target="_blank">
+    <img src="./assets/card-exp-3.svg" width="100%" alt="Algorithmic Solutions Suite" />
   </a>
 </p>
 <p align="center">
   <a href="https://github.com/May-Jo/Parking_Iot" target="_blank">
-    <img src="./assets/card-exp-2.svg" width="100%" alt="IoT & Edge AI Systems" />
-  </a>
-</p>
-<p align="center">
-  <a href="https://github.com/May-Jo/awesome-hackathon" target="_blank">
-    <img src="./assets/card-exp-3.svg" width="100%" alt="Awesome Hackathon" />
+    <img src="./assets/card-exp-4.svg" width="100%" alt="IoT & TinyML Telemetry" />
   </a>
 </p>
 
@@ -65,23 +70,23 @@
   <img src="./assets/projects-header.svg" width="100%" alt="Featured projects header" />
 </p>
 <p align="center">
-  <a href="https://github.com/May-Jo/Dynamic-Patrol-Route-Optimizer" target="_blank">
-    <img src="./assets/card-project-1.svg" width="100%" alt="Dynamic Patrol Route Optimizer" />
+  <a href="https://github.com/May-Jo/llm_engineering" target="_blank">
+    <img src="./assets/card-project-1.svg" width="100%" alt="LLM Engineering & Autonomous Agents" />
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/May-Jo/Email-assistant" target="_blank">
+    <img src="./assets/card-project-2.svg" width="100%" alt="AI Email Assistant & Automation System" />
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/May-Jo/LeetCode" target="_blank">
+    <img src="./assets/card-project-3.svg" width="100%" alt="Algorithmic Solutions & Data Structures" />
   </a>
 </p>
 <p align="center">
   <a href="https://github.com/May-Jo/Parking_Iot" target="_blank">
-    <img src="./assets/card-project-2.svg" width="100%" alt="Parking IoT / TinyML" />
-  </a>
-</p>
-<p align="center">
-  <a href="https://github.com/May-Jo/awesome-hackathon" target="_blank">
-    <img src="./assets/card-project-3.svg" width="100%" alt="Awesome Hackathon" />
-  </a>
-</p>
-<p align="center">
-  <a href="https://github.com/May-Jo/llm_engineering" target="_blank">
-    <img src="./assets/card-project-4.svg" width="100%" alt="LLM Engineering & Agents" />
+    <img src="./assets/card-project-4.svg" width="100%" alt="Smart IoT & TinyML Telemetry System" />
   </a>
 </p>
 
