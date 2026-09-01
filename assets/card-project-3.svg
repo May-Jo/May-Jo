@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="268" viewBox="0 0 900 268" role="img" aria-label="Awesome Hackathon project card">
+  <rect width="100%" height="100%" fill="#0d1117" rx="12"/>
+  <g class="card-group">
+    <rect x="18" y="10" width="864" height="248" rx="10" class="card-bg"/>
+    <g transform="translate(18, 10)">
+      <text x="32" y="34" class="title">Awesome Hackathon</text><text x="832" y="34" class="arrow" text-anchor="end">View Repository ↗</text><line x1="32" y1="50" x2="832" y2="50" stroke="#21262d" stroke-width="1"/><text x="32" y="74" class="desc">Open-source curated directory and interactive web application collecting top platforms,</text><text x="32" y="96" class="desc">tools, APIs, guides, and playbooks for hackathon organizers and competitive developers.</text><text x="32" y="130" class="section-hdr">Key Metrics:</text><text x="46" y="152" class="metric">▸ 50+ curated hackathon tools &amp; platforms</text><text x="46" y="172" class="metric">▸ Interactive instant search and filtering engine</text><text x="46" y="192" class="metric">▸ Community-driven open source repository</text><text x="32" y="224" class="stack">Tech Stack: JavaScript · CSS3 · HTML5 · Open Source</text>
+    </g>
+  </g>
+  <style>
+    .card-bg     { fill: #010409; stroke: #21262d; stroke-width: 1.5; transition: all 0.2s ease; }
+    .title       { font-family: 'JetBrains Mono', monospace; font-size: 19px; fill: #3fb950; font-weight: 700; }
+    .arrow       { font-family: 'JetBrains Mono', monospace; font-size: 13px; fill: #7d8590; transition: fill 0.2s ease; }
+    .desc        { font-family: 'JetBrains Mono', monospace; font-size: 13px; fill: #e6edf3; }
+    .section-hdr { font-family: 'JetBrains Mono', monospace; font-size: 13px; fill: #8b949e; font-weight: 700; }
+    .metric      { font-family: 'JetBrains Mono', monospace; font-size: 12px; fill: #8b949e; }
+    .stack       { font-family: 'JetBrains Mono', monospace; font-size: 12px; fill: #3fb950; opacity: 0.85; }
+    svg:hover .card-bg { stroke: #3fb950; fill: #0d1117; }
+    svg:hover .arrow   { fill: #3fb950; }
+  </style>
+</svg>

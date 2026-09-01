@@ -13,7 +13,7 @@
   ],
   "location": "India",
   "contact": "studyzzz25@gmail.com",
-  "linkedin": "https://linkedin.com/in/mayank",
+  "linkedin": "https://www.linkedin.com/in/mayanknjoshi/",
   "github": "https://github.com/May-Jo",
   "hero_interests": [
     "AI & Machine Learning",
@@ -171,11 +171,6 @@
       "url": "https://github.com/May-Jo",
       "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
       "extra": "14+ Public Repositories & Tools"
-    },
-    "CodeChef": {
-      "url": "https://www.codechef.com",
-      "icon": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/codechef.svg",
-      "extra": "Competitive Programming"
     }
   },
   "currently": {

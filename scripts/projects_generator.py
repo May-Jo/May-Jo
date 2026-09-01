@@ -144,10 +144,97 @@ def build_svg(projects: list[dict]) -> str:
 </svg>'''
 
 
+def build_single_project_card(project: dict) -> str:
+    """Render a standalone full-width project card SVG with hover styling for HTML <a> wrapping."""
+    elements: list[str] = []
+    CARD_W = 900
+    INNER_W = 864
+    PAD_LEFT = 32
+    cy = 34
+
+    # Title
+    elements.append(
+        f'<text x="{PAD_LEFT}" y="{cy}" class="title">{esc(project["title"])}</text>'
+    )
+    elements.append(
+        f'<text x="{INNER_W - PAD_LEFT}" y="{cy}" class="arrow" text-anchor="end">View Repository ↗</text>'
+    )
+    cy += 16
+
+    # Separator
+    elements.append(
+        f'<line x1="{PAD_LEFT}" y1="{cy}" x2="{INNER_W - PAD_LEFT}" y2="{cy}" '
+        f'stroke="#21262d" stroke-width="1"/>'
+    )
+    cy += 24
+
+    # Description
+    desc_lines = textwrap.wrap(project["description"], width=92)
+    for dl in desc_lines:
+        elements.append(
+            f'<text x="{PAD_LEFT}" y="{cy}" class="desc">{esc(dl)}</text>'
+        )
+        cy += 22
+    cy += 12
+
+    # Key Metrics
+    metrics = project.get("metrics", [])
+    if metrics:
+        elements.append(
+            f'<text x="{PAD_LEFT}" y="{cy}" class="section-hdr">Key Metrics:</text>'
+        )
+        cy += 22
+        for m in metrics:
+            elements.append(
+                f'<text x="{PAD_LEFT + 14}" y="{cy}" class="metric">▸ {esc(m)}</text>'
+            )
+            cy += 20
+        cy += 12
+
+    # Tech Stack
+    stack_str = " · ".join(project["stack"])
+    stack_lines = textwrap.wrap(f"Tech Stack: {stack_str}", width=95)
+    for sl in stack_lines:
+        elements.append(
+            f'<text x="{PAD_LEFT}" y="{cy}" class="stack">{esc(sl)}</text>'
+        )
+        cy += 20
+    cy += 24
+
+    card_height = cy
+
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{CARD_W}" height="{card_height}" viewBox="0 0 {CARD_W} {card_height}" role="img" aria-label="{esc(project["title"])} project card">
+  <rect width="100%" height="100%" fill="#0d1117" rx="12"/>
+  <g class="card-group">
+    <rect x="18" y="10" width="{INNER_W}" height="{card_height - 20}" rx="10" class="card-bg"/>
+    <g transform="translate(18, 10)">
+      {''.join(elements)}
+    </g>
+  </g>
+  <style>
+    .card-bg     {{ fill: #010409; stroke: #21262d; stroke-width: 1.5; transition: all 0.2s ease; }}
+    .title       {{ font-family: 'JetBrains Mono', monospace; font-size: 19px; fill: #3fb950; font-weight: 700; }}
+    .arrow       {{ font-family: 'JetBrains Mono', monospace; font-size: 13px; fill: #7d8590; transition: fill 0.2s ease; }}
+    .desc        {{ font-family: 'JetBrains Mono', monospace; font-size: 13px; fill: #e6edf3; }}
+    .section-hdr {{ font-family: 'JetBrains Mono', monospace; font-size: 13px; fill: #8b949e; font-weight: 700; }}
+    .metric      {{ font-family: 'JetBrains Mono', monospace; font-size: 12px; fill: #8b949e; }}
+    .stack       {{ font-family: 'JetBrains Mono', monospace; font-size: 12px; fill: #3fb950; opacity: 0.85; }}
+    svg:hover .card-bg {{ stroke: #3fb950; fill: #0d1117; }}
+    svg:hover .arrow   {{ fill: #3fb950; }}
+  </style>
+</svg>'''
+
+
 def main() -> None:
     profile = load_profile()
     OUTPUT_PATH.write_text(build_svg(profile["projects"]), encoding="utf-8")
 
+    # Build individual project cards
+    for idx, project in enumerate(profile["projects"], 1):
+        card_path = ROOT / "assets" / f"card-project-{idx}.svg"
+        card_path.write_text(build_single_project_card(project), encoding="utf-8")
+
 
 if __name__ == "__main__":
     main()
+

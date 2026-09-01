@@ -226,11 +226,129 @@ def build_currently(currently: dict) -> str:
 </svg>'''
 
 
+def build_section_header(title: str, prompt: str) -> str:
+    """Generic terminal section header SVG."""
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="900" height="72" viewBox="0 0 900 72" role="img" aria-label="{esc(title)} Header">
+  <rect width="100%" height="100%" fill="#0d1117" rx="12"/>
+  <rect x="18" y="18" width="864" height="54" rx="10" fill="#010409" stroke="#21262d"/>
+  <circle cx="42" cy="38" r="6" fill="#f85149"/>
+  <circle cx="62" cy="38" r="6" fill="#d29922"/>
+  <circle cx="82" cy="38" r="6" fill="#3fb950"/>
+  <text x="40" y="60" class="prompt">{esc(prompt)}</text>
+  <style>
+    .prompt {{ font-family: 'JetBrains Mono', monospace; font-size: 14px; fill: #7d8590; }}
+  </style>
+</svg>'''
+
+
+def build_single_achievement_card(ach: dict) -> str:
+    """Standalone SVG card for an achievement, for HTML <a> wrapping."""
+    name = ach.get("name", "")
+    subtitle = ach.get("subtitle", "")
+    icon_url = ach.get("icon", "")
+
+    CARD_W = 420
+    CARD_H = 120
+    ICON_SIZE = 44
+
+    color_override = "#3fb950" if "github" in icon_url.lower() else "#58a6ff" if "opensource" in icon_url.lower() else "#e6edf3"
+    data_uri = to_data_uri(icon_url, color_override=color_override)
+
+    icon_y = (CARD_H - ICON_SIZE) // 2
+    icon_markup = (
+        f'<image href="{data_uri}" x="24" y="{icon_y}" '
+        f'width="{ICON_SIZE}" height="{ICON_SIZE}"/>'
+        if data_uri
+        else ""
+    )
+
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{CARD_W}" height="{CARD_H}" viewBox="0 0 {CARD_W} {CARD_H}" role="img" aria-label="{esc(name)} card">
+  <rect width="100%" height="100%" fill="#0d1117" rx="10"/>
+  <g class="card-group">
+    <rect x="5" y="5" width="{CARD_W - 10}" height="{CARD_H - 10}" rx="10" class="card-bg"/>
+    {icon_markup}
+    <text x="82" y="50" class="title">{esc(name)}</text>
+    <text x="82" y="76" class="subtitle">{esc(subtitle)}</text>
+    <text x="{CARD_W - 22}" y="26" class="arrow" text-anchor="middle">↗</text>
+  </g>
+  <style>
+    .card-bg  {{ fill: #0d1117; stroke: #21262d; stroke-width: 1.5; transition: all 0.2s ease; }}
+    .title     {{ font-family: 'JetBrains Mono', monospace; font-size: 15px; fill: #3fb950; font-weight: 700; }}
+    .subtitle  {{ font-family: 'JetBrains Mono', monospace; font-size: 12px; fill: #e6edf3; }}
+    .arrow     {{ font-family: 'JetBrains Mono', monospace; font-size: 14px; fill: #7d8590; transition: fill 0.2s ease; }}
+    svg:hover .card-bg {{ stroke: #3fb950; fill: #161b22; }}
+    svg:hover .arrow   {{ fill: #3fb950; }}
+  </style>
+</svg>'''
+
+
+def build_coding_header() -> str:
+    """Header SVG for coding profiles terminal window."""
+    return build_section_header("Coding Profiles", "$ cat coding-profiles.log")
+
+
+def build_single_card(name: str, details: dict) -> str:
+    """Standalone SVG card for a coding platform, suitable for wrapping in an <a> tag in Markdown."""
+    icon_url = details.get("icon", "")
+    extra_text = details.get("extra", "")
+    color_override = "#e6edf3" if "simple-icons" in icon_url else None
+    data_uri = to_data_uri(icon_url, color_override=color_override)
+
+    CARD_W = 420
+    CARD_H = 135
+    ICON_SIZE = 44
+
+    icon_x = (CARD_W - ICON_SIZE) // 2
+    center_x = CARD_W // 2
+
+    icon_markup = (
+        f'<image href="{data_uri}" x="{icon_x}" y="16" '
+        f'width="{ICON_SIZE}" height="{ICON_SIZE}"/>'
+        if data_uri
+        else ""
+    )
+
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{CARD_W}" height="{CARD_H}" viewBox="0 0 {CARD_W} {CARD_H}" role="img" aria-label="{esc(name)} profile card">
+  <rect width="100%" height="100%" fill="#0d1117" rx="10"/>
+  <g class="card-group">
+    <rect x="5" y="5" width="{CARD_W - 10}" height="{CARD_H - 10}" rx="10" class="card-bg"/>
+    {icon_markup}
+    <text x="{center_x}" y="84" class="platform" text-anchor="middle">{esc(name)}</text>
+    <text x="{center_x}" y="108" class="extra" text-anchor="middle">{esc(extra_text)}</text>
+    <text x="{CARD_W - 22}" y="26" class="arrow" text-anchor="middle">↗</text>
+  </g>
+  <style>
+    .card-bg  {{ fill: #0d1117; stroke: #21262d; stroke-width: 1.5; transition: all 0.2s ease; }}
+    .platform {{ font-family: 'JetBrains Mono', monospace; font-size: 15px; fill: #3fb950; font-weight: 700; }}
+    .extra    {{ font-family: 'JetBrains Mono', monospace; font-size: 12px; fill: #8b949e; }}
+    .arrow     {{ font-family: 'JetBrains Mono', monospace; font-size: 14px; fill: #7d8590; transition: fill 0.2s ease; }}
+    svg:hover .card-bg {{ stroke: #3fb950; fill: #161b22; }}
+    svg:hover .arrow   {{ fill: #3fb950; }}
+  </style>
+</svg>'''
+
+
 def main() -> None:
     profile = load_profile()
     ACHIEVEMENTS_PATH.write_text(build_achievements(profile), encoding="utf-8")
     CODING_PATH.write_text(build_coding(profile["coding"]), encoding="utf-8")
     CURRENTLY_PATH.write_text(build_currently(profile["currently"]), encoding="utf-8")
+
+    # Section Headers
+    (ROOT / "assets" / "coding-header.svg").write_text(build_coding_header(), encoding="utf-8")
+    (ROOT / "assets" / "experience-header.svg").write_text(build_section_header("Experience", "$ cat experience.log"), encoding="utf-8")
+    (ROOT / "assets" / "projects-header.svg").write_text(build_section_header("Projects", "$ ls featured-projects/"), encoding="utf-8")
+    (ROOT / "assets" / "achievements-header.svg").write_text(build_section_header("Achievements", "$ cat achievements.log"), encoding="utf-8")
+    (ROOT / "assets" / "tech-stack-header.svg").write_text(build_section_header("Tech Stack", "$ cat tech-stack.yml"), encoding="utf-8")
+
+    # Individual Coding Cards
+    for name, details in profile["coding"].items():
+        slug = name.lower()
+        (ROOT / "assets" / f"card-{slug}.svg").write_text(build_single_card(name, details), encoding="utf-8")
+
+    # Individual Achievement Cards
+    for idx, ach in enumerate(profile.get("achievements", []), 1):
+        (ROOT / "assets" / f"card-achieve-{idx}.svg").write_text(build_single_achievement_card(ach), encoding="utf-8")
 
 
 if __name__ == "__main__":

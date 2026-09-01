@@ -13,9 +13,9 @@ POLLITO_PATH = ROOT / "assets" / "misc" / "pollito.gif"
 OUTPUT_PATH = ROOT / "assets" / "banner.svg"
 
 DOT_COLORS = ["#f85149", "#d29922", "#3fb950"]
-RESUME_URL = "https://raw.githubusercontent.com/May-Jo/May-Jo/main/assets/Mayank_CV.pdf"
+RESUME_URL = "https://raw.githubusercontent.com/May-Jo/May-Jo/main/assets/Mayank_Joshi_Resume.pdf"
 GITHUB_URL = "https://github.com/May-Jo"
-LINKEDIN_URL = "https://linkedin.com/in/mayank"
+LINKEDIN_URL = "https://www.linkedin.com/in/mayanknjoshi/"
 EMAIL_URL = "mailto:studyzzz25@gmail.com"
 
 
@@ -79,7 +79,7 @@ def build_svg(profile: dict) -> str:
     b1_x = PAD
     b1_w = 160
     elements.append(
-        f'<a href="{RESUME_URL}" target="_blank" download="Mayank_CV.pdf" class="btn-link">'
+        f'<a href="{RESUME_URL}" target="_blank" download="Mayank_Joshi_Resume.pdf" class="btn-link">'
         f'<g opacity="0" class="btn-group">'
         f'<animate attributeName="opacity" begin="{btn_begin:.2f}s" dur="0.15s" from="0" to="1" fill="freeze"/>'
         f'<rect x="{b1_x}" y="{btn_y}" width="{b1_w}" height="{btn_h}" rx="6" class="btn-bg"/>'

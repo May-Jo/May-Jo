@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="120" viewBox="0 0 420 120" role="img" aria-label="Hackathon Builder &amp; Innovator card">
+  <rect width="100%" height="100%" fill="#0d1117" rx="10"/>
+  <g class="card-group">
+    <rect x="5" y="5" width="410" height="110" rx="10" class="card-bg"/>
+    <image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMzZmI5NTAiIGQ9Ik0xMiAuMjk3Yy02LjYzIDAtMTIgNS4zNzMtMTIgMTJjMCA1LjMwMyAzLjQzOCA5LjggOC4yMDUgMTEuMzg1Yy42LjExMy44Mi0uMjU4LjgyLS41NzdjMC0uMjg1LS4wMS0xLjA0LS4wMTUtMi4wNGMtMy4zMzguNzI0LTQuMDQyLTEuNjEtNC4wNDItMS42MUM0LjQyMiAxOC4wNyAzLjYzMyAxNy43IDMuNjMzIDE3LjdjLTEuMDg3LS43NDQuMDg0LS43MjkuMDg0LS43MjljMS4yMDUuMDg0IDEuODM4IDEuMjM2IDEuODM4IDEuMjM2YzEuMDcgMS44MzUgMi44MDkgMS4zMDUgMy40OTUuOTk4Yy4xMDgtLjc3Ni40MTctMS4zMDUuNzYtMS42MDVjLTIuNjY1LS4zLTUuNDY2LTEuMzMyLTUuNDY2LTUuOTNjMC0xLjMxLjQ2NS0yLjM4IDEuMjM1LTMuMjJjLS4xMzUtLjMwMy0uNTQtMS41MjMuMTA1LTMuMTc2YzAgMCAxLjAwNS0uMzIyIDMuMyAxLjIzYy45Ni0uMjY3IDEuOTgtLjM5OSAzLS40MDVjMS4wMi4wMDYgMi4wNC4xMzggMyAuNDA1YzIuMjgtMS41NTIgMy4yODUtMS4yMyAzLjI4NS0xLjIzYy42NDUgMS42NTMuMjQgMi44NzMuMTIgMy4xNzZjLjc2NS44NCAxLjIzIDEuOTEgMS4yMyAzLjIyYzAgNC42MS0yLjgwNSA1LjYyNS01LjQ3NSA1LjkyYy40Mi4zNi44MSAxLjA5Ni44MSAyLjIyYzAgMS42MDYtLjAxNSAyLjg5Ni0uMDE1IDMuMjg2YzAgLjMxNS4yMS42OS44MjUuNTdDMjAuNTY1IDIyLjA5MiAyNCAxNy41OTIgMjQgMTIuMjk3YzAtNi42MjctNS4zNzMtMTItMTItMTIiLz48L3N2Zz4=" x="24" y="38" width="44" height="44"/>
+    <text x="82" y="50" class="title">Hackathon Builder &amp; Innovator</text>
+    <text x="82" y="76" class="subtitle">Passionate Builder · Rapid Prototyping</text>
+    <text x="398" y="26" class="arrow" text-anchor="middle">↗</text>
+  </g>
+  <style>
+    .card-bg  { fill: #0d1117; stroke: #21262d; stroke-width: 1.5; transition: all 0.2s ease; }
+    .title     { font-family: 'JetBrains Mono', monospace; font-size: 15px; fill: #3fb950; font-weight: 700; }
+    .subtitle  { font-family: 'JetBrains Mono', monospace; font-size: 12px; fill: #e6edf3; }
+    .arrow     { font-family: 'JetBrains Mono', monospace; font-size: 14px; fill: #7d8590; transition: fill 0.2s ease; }
+    svg:hover .card-bg { stroke: #3fb950; fill: #161b22; }
+    svg:hover .arrow   { fill: #3fb950; }
+  </style>
+</svg>

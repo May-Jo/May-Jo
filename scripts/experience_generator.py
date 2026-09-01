@@ -118,10 +118,93 @@ def build_svg(profile: dict) -> str:
 </svg>'''
 
 
+def build_single_exp_card(entry: dict) -> str:
+    """Render a standalone experience card SVG with hover styling for HTML <a> wrapping."""
+    company = entry["company"]
+    role = entry["role"]
+    duration = entry["duration"]
+    highlights = entry.get("highlights", [])
+    techs = entry.get("technologies", [])
+
+    CARD_W = 900
+    INNER_W = 864
+    PAD_LEFT = 32
+    TIMELINE_X = PAD_LEFT + 12
+
+    elements: list[str] = []
+    y = 32
+
+    # Timeline circle
+    elements.append(
+        f'<circle cx="{TIMELINE_X}" cy="{y}" r="6" fill="#3fb950" stroke="#010409" stroke-width="2"/>'
+    )
+
+    # Header & Duration
+    header_text = f'{role} @ {company}'
+    elements.append(
+        f'<text x="{TIMELINE_X + 22}" y="{y + 5}" class="role-title">{esc(header_text)}</text>'
+    )
+    elements.append(
+        f'<text x="{INNER_W - PAD_LEFT - 120}" y="{y + 5}" class="duration" text-anchor="end">{esc(duration)}</text>'
+    )
+    elements.append(
+        f'<text x="{INNER_W - PAD_LEFT}" y="{y + 5}" class="arrow" text-anchor="end">View ↗</text>'
+    )
+    y += 26
+
+    # Highlights
+    for h in highlights:
+        lines = textwrap.wrap(h, width=82)
+        for i, line in enumerate(lines):
+            bullet = "• " if i == 0 else "  "
+            elements.append(
+                f'<text x="{TIMELINE_X + 22}" y="{y}" class="bullet">{esc(bullet + line)}</text>'
+            )
+            y += 20
+        y += 4
+    y += 6
+
+    # Tech tags
+    if techs:
+        tech_str = "  ·  ".join(techs)
+        elements.append(
+            f'<text x="{TIMELINE_X + 22}" y="{y}" class="tech-tag">{esc(tech_str)}</text>'
+        )
+        y += 24
+
+    card_height = y + 20
+
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{CARD_W}" height="{card_height}" viewBox="0 0 {CARD_W} {card_height}" role="img" aria-label="{esc(company)} experience card">
+  <rect width="100%" height="100%" fill="#0d1117" rx="12"/>
+  <g class="card-group">
+    <rect x="18" y="10" width="{INNER_W}" height="{card_height - 20}" rx="10" class="card-bg"/>
+    <g transform="translate(18, 10)">
+      {''.join(elements)}
+    </g>
+  </g>
+  <style>
+    .card-bg   {{ fill: #010409; stroke: #21262d; stroke-width: 1.5; transition: all 0.2s ease; }}
+    .role-title {{ font-family: 'JetBrains Mono', monospace; font-size: 16px; fill: #e6edf3; font-weight: 700; }}
+    .duration   {{ font-family: 'JetBrains Mono', monospace; font-size: 13px; fill: #3fb950; }}
+    .arrow      {{ font-family: 'JetBrains Mono', monospace; font-size: 13px; fill: #7d8590; transition: fill 0.2s ease; }}
+    .bullet     {{ font-family: 'JetBrains Mono', monospace; font-size: 13px; fill: #8b949e; }}
+    .tech-tag   {{ font-family: 'JetBrains Mono', monospace; font-size: 12px; fill: #3fb950; opacity: 0.85; }}
+    svg:hover .card-bg {{ stroke: #3fb950; fill: #0d1117; }}
+    svg:hover .arrow   {{ fill: #3fb950; }}
+  </style>
+</svg>'''
+
+
 def main() -> None:
     profile = load_profile()
     OUTPUT_PATH.write_text(build_svg(profile), encoding="utf-8")
 
+    # Generate individual experience cards
+    for idx, entry in enumerate(profile["experience"], 1):
+        card_path = ROOT / "assets" / f"card-exp-{idx}.svg"
+        card_path.write_text(build_single_exp_card(entry), encoding="utf-8")
+
 
 if __name__ == "__main__":
     main()
+
