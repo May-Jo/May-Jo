@@ -1,48 +1,13 @@
 {
   "username": "May-Jo",
-  "generated_at": "2026-09-12T07:08:42.194056+00:00",
+  "generated_at": "2026-09-13T07:27:35.886561+00:00",
   "fetch_succeeded": true,
   "error": null,
-  "total": 116,
+  "total": 118,
   "current_streak": 27,
   "longest_streak": 27,
   "max_count": 8,
   "days": [
-    {
-      "date": "2025-09-07",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-09-08",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-09-09",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-09-10",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-09-11",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-09-12",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-09-13",
-      "count": 0,
-      "level": 0
-    },
     {
       "date": "2025-09-14",
       "count": 0,
@@ -1860,8 +1825,13 @@
     },
     {
       "date": "2026-09-12",
-      "count": 5,
-      "level": 3
+      "count": 7,
+      "level": 4
+    },
+    {
+      "date": "2026-09-13",
+      "count": 0,
+      "level": 0
     }
   ]
 }
